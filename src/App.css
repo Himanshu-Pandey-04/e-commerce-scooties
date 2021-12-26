@@ -31,10 +31,10 @@
 
 .body .info button {
   margin-top: 3ch;
-  background-color: rgb(201, 0, 0);
   padding: 1ch 2ch;
   border: none;
   cursor: pointer;
+  background: linear-gradient(#bd1b28, #ff2717);
 }
 
 .body .info button a {
@@ -45,8 +45,8 @@
 }
 
 .body .info button:hover {
-  background-color: black;
   transition: 1s ease;
+  background: linear-gradient(#6d6200, #700700, #001263);
 }
 
 .body .product {
@@ -68,4 +68,38 @@
   right: 45vw;
   width: 50vw;
   z-index: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .body {
+    display: block;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .body .product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .body .product .images #circle {
+    display: none;
+  }
+
+  .body .product .images #prod {
+    display: block;
+    position: relative;
+    width: 250px;
+    left: 5%;
+    top: 30px;
+  }
+
+  .body .info {
+    display: block;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
 }

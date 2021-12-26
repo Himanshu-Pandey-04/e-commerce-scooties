@@ -43,13 +43,14 @@
   transition: linear 1s ease;
 }
 
-.header .top-header .options {
+.header .options {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  background-color: black;
 }
 
-.header .top-header .options a {
+.header .options a {
   margin: 0px 10px;
   text-decoration: none;
   color: white;
@@ -58,6 +59,10 @@
 
 .header .top-header .options a i {
   color: rgb(202, 0, 0);
+}
+
+.header .toggle-menu {
+  display: none;
 }
 
 .header .bottom-header {
@@ -158,10 +163,10 @@
 }
 
 .sub-menu {
+  display: flex;
   position: relative;
   height: 170px;
   padding: 0 3vw;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
@@ -206,4 +211,81 @@
 
 .sub-menu .o-left:hover::after {
   transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 700px) {
+  .header .top-header {
+    display: block;
+  }
+
+  .header .top-header .support {
+    display: block;
+    margin-left: 3.4ch;
+  }
+
+  .header .top-header .book-ride {
+    margin-left: 2ch;
+    display: block;
+  }
+
+  .header .top-header .options {
+    padding: 1ch 0;
+  }
+
+  .header .toggle-menu {
+    display: block;
+    background-color: black;
+    padding: 0.5ch 0 0.5ch 3ch;
+    border-top: 0.05vh solid white;
+  }
+
+  .header .toggle-menu i {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .header .bottom-header {
+    display: none;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .header .bottom-header .logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+  }
+
+  .header .bottom-header .logo i {
+    font-size: 10px;
+    border-width: 4px;
+  }
+
+  .header .bottom-header .options {
+    flex-direction: column;
+  }
+
+  .header .bottom-header .options .btn,
+  .dropdown {
+    margin: 1ch 1ch;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .bottom-header .dealership {
+    display: block;
+    margin-top: 1ch;
+    width: 50%;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .sub-menu {
+    display: none;
+    height: 50px;
+  }
 }
