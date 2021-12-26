@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poly&display=swap");
+
+.header .top-header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 5% 1vh 10%;
+  font-family: "Poly", serif;
+  z-index: 4;
+}
+
+.header .top-header a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header .top-header a i {
+  color: black;
+  margin-right: 2ch;
+}
+
+.header .top-header a:hover,
+.header .top-header a:hover i {
+  color: greenyellow;
+  transition: linear 1s ease;
+}
+
+.header .top-header .book-ride {
+  text-decoration: none;
+  color: rgb(236, 0, 0);
+}
+
+.header .top-header .book-ride i {
+  color: black;
+}
+
+.header .top-header .book-ride:hover,
+.header .top-header .book-ride:hover i {
+  color: rgb(255, 0, 0);
+  transition: linear 1s ease;
+}
+
+.header .top-header .options {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header .top-header .options a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair";
+}
+
+.header .top-header .options a i {
+  color: rgb(202, 0, 0);
+}
+
+.header .bottom-header {
+  display: flex;
+  padding: 3vh 5vw 2vh 10vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  font-family: "Playfair Display", serif;
+  z-index: 2;
+}
+
+.header .bottom-header .logo {
+  padding: 8px;
+  background-color: white;
+}
+
+.header .bottom-header .logo i {
+  border: rgb(209, 0, 0) 8px solid;
+  color: white;
+}
+
+.header .bottom-header .options {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header .bottom-header .options .btn {
+  margin: 0 2vw;
+  text-decoration: none;
+  color: white;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2ch;
+  position: relative;
+  font-family: "Poly", serif;
+}
+
+.header .bottom-header .options .btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: -10px;
+  background: rgb(204, 0, 0);
+}
+
+.header .bottom-header .options .btn-center::after {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+.header .bottom-header .options .btn-center:hover::after {
+  transform: scale(1, 1);
+}
+
+.header .bottom-header .options .dropdown {
+  padding: 0 4ch;
+  text-decoration: none;
+  color: white;
+  font-size: 2ch;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header .bottom-header .options .dropdown i {
+  color: rgb(212, 0, 0);
+}
+
+.header .bottom-header .dealership {
+  padding: 8px 10px;
+  background-color: rgb(218, 0, 0);
+  border: none;
+  font-size: 1.3vw;
+  font-family: "Poly", serif;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.header .bottom-header .dealership:hover {
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.header .bottom-header .dealership:hover a {
+  color: black;
+}
+
+.header .bottom-header .dealership a {
+  text-decoration: none;
+  font-size: 2ch;
+  font-weight: 500;
+  color: white;
+}
+
+.sub-menu {
+  position: relative;
+  height: 170px;
+  padding: 0 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.sub-menu .option {
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-family: "Poly", serif;
+  color: gray;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.sub-menu .option::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: rgb(187, 0, 0);
+}
+
+.sub-menu .o-left::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+.sub-menu .o-left:hover {
+  color: black;
+}
+
+.sub-menu .o-left:hover::after {
+  transform: scale(1, 1);
+}
