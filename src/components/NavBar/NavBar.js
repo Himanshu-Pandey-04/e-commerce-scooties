@@ -59,7 +59,7 @@ function toggleMenu() {
 
 function toggleSubMenu() {
     var sub_menu = document.getElementsByClassName('sub-menu')[0];
-    if(sub_menu.style.display == 'none') sub_menu.style.display = 'flex';
+    if(sub_menu.style.display === 'none') sub_menu.style.display = 'flex';
     else sub_menu.style.display = 'none';
     console.log('toggleSubMenu');
 }

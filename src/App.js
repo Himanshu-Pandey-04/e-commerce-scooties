@@ -1,5 +1,4 @@
 import './App.css';
-import closeSubMenu from './components/NavBar/NavBar';
 
 import NavBar from './components/NavBar/NavBar';
 
