@@ -7,7 +7,7 @@
 .body .info {
   display: block;
   width: 40%;
-  margin-left: 14%;
+  margin: 30vh 0 0 14%;
   text-align: left;
   padding: 0 1ch;
 }
@@ -46,7 +46,7 @@
 
 .body .info button:hover {
   transition: 1s ease;
-  background: linear-gradient(#6d6200, #700700, #001263);
+  background: linear-gradient(#817400, #700700, #001263);
 }
 
 .body .product {
@@ -58,8 +58,8 @@
   position: relative;
   width: 40vw;
   z-index: 0;
-  left: -110px;
-  top: -1vh;
+  left: -80px;
+  top: 25vh;
 }
 
 .body .product .images #prod {
